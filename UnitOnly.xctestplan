@@ -1,0 +1,18 @@
+{
+  "configurations" : [
+    {
+      "id" : "9DEBF300-F725-45CD-BB41-E839DD349313",
+      "name" : "Configuration 1",
+      "options" : {
+
+      }
+    }
+  ],
+  "defaultOptions" : {
+
+  },
+  "testTargets" : [
+
+  ],
+  "version" : 1
+}
