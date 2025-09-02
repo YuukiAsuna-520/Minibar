@@ -12,7 +12,13 @@
 
   },
   "testTargets" : [
-
+    {
+      "target" : {
+        "containerPath" : "container:Minibar.xcodeproj",
+        "identifier" : "A321B4FF2E67278800D13477",
+        "name" : "MinibarTests"
+      }
+    }
   ],
   "version" : 1
 }

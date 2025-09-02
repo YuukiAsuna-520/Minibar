@@ -14,19 +14,11 @@
 			remoteGlobalIDString = A321B4F22E67278700D13477;
 			remoteInfo = Minibar;
 		};
-		A321B50B2E67278800D13477 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = A321B4EB2E67278700D13477 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = A321B4F22E67278700D13477;
-			remoteInfo = Minibar;
-		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		A321B4F32E67278700D13477 /* Minibar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Minibar.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A321B5002E67278800D13477 /* MinibarTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MinibarTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		A321B50A2E67278800D13477 /* MinibarUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MinibarUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -38,11 +30,6 @@
 		A321B5032E67278800D13477 /* MinibarTests */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			path = MinibarTests;
-			sourceTree = "<group>";
-		};
-		A321B50D2E67278800D13477 /* MinibarUITests */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = MinibarUITests;
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
@@ -62,13 +49,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		A321B5072E67278800D13477 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -77,7 +57,6 @@
 			children = (
 				A321B4F52E67278700D13477 /* Minibar */,
 				A321B5032E67278800D13477 /* MinibarTests */,
-				A321B50D2E67278800D13477 /* MinibarUITests */,
 				A321B4F42E67278700D13477 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -87,7 +66,6 @@
 			children = (
 				A321B4F32E67278700D13477 /* Minibar.app */,
 				A321B5002E67278800D13477 /* MinibarTests.xctest */,
-				A321B50A2E67278800D13477 /* MinibarUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -140,29 +118,6 @@
 			productReference = A321B5002E67278800D13477 /* MinibarTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		A321B5092E67278800D13477 /* MinibarUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = A321B51A2E67278800D13477 /* Build configuration list for PBXNativeTarget "MinibarUITests" */;
-			buildPhases = (
-				A321B5062E67278800D13477 /* Sources */,
-				A321B5072E67278800D13477 /* Frameworks */,
-				A321B5082E67278800D13477 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				A321B50C2E67278800D13477 /* PBXTargetDependency */,
-			);
-			fileSystemSynchronizedGroups = (
-				A321B50D2E67278800D13477 /* MinibarUITests */,
-			);
-			name = MinibarUITests;
-			packageProductDependencies = (
-			);
-			productName = MinibarUITests;
-			productReference = A321B50A2E67278800D13477 /* MinibarUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -177,10 +132,6 @@
 						CreatedOnToolsVersion = 16.4;
 					};
 					A321B4FF2E67278800D13477 = {
-						CreatedOnToolsVersion = 16.4;
-						TestTargetID = A321B4F22E67278700D13477;
-					};
-					A321B5092E67278800D13477 = {
 						CreatedOnToolsVersion = 16.4;
 						TestTargetID = A321B4F22E67278700D13477;
 					};
@@ -202,7 +153,6 @@
 			targets = (
 				A321B4F22E67278700D13477 /* Minibar */,
 				A321B4FF2E67278800D13477 /* MinibarTests */,
-				A321B5092E67278800D13477 /* MinibarUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -216,13 +166,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		A321B4FE2E67278800D13477 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		A321B5082E67278800D13477 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -246,13 +189,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		A321B5062E67278800D13477 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -260,11 +196,6 @@
 			isa = PBXTargetDependency;
 			target = A321B4F22E67278700D13477 /* Minibar */;
 			targetProxy = A321B5012E67278800D13477 /* PBXContainerItemProxy */;
-		};
-		A321B50C2E67278800D13477 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = A321B4F22E67278700D13477 /* Minibar */;
-			targetProxy = A321B50B2E67278800D13477 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -478,38 +409,6 @@
 			};
 			name = Release;
 		};
-		A321B51B2E67278800D13477 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = Tingxuan.Zhang.MinibarUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = Minibar;
-			};
-			name = Debug;
-		};
-		A321B51C2E67278800D13477 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = Tingxuan.Zhang.MinibarUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = Minibar;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -536,15 +435,6 @@
 			buildConfigurations = (
 				A321B5182E67278800D13477 /* Debug */,
 				A321B5192E67278800D13477 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		A321B51A2E67278800D13477 /* Build configuration list for PBXNativeTarget "MinibarUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				A321B51B2E67278800D13477 /* Debug */,
-				A321B51C2E67278800D13477 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
