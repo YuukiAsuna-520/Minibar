@@ -84,10 +84,10 @@ final class ScheduleViewModel: ObservableObject {
             return "End time must be after start time."
         }
         let diff = end.timeIntervalSince(start)
-        if diff < 30 * 60 {
+        if diff <= 29 * 60 {
             return "Time slot must be at least 30 minutes."
         }
-        if diff > 5 * 60 * 60 {
+        if diff >= 5 * 60 * 60 {
             return "Time slot cannot exceed 5 hours."
         }
         return nil
