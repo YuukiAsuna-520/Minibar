@@ -8,11 +8,19 @@
 import SwiftUI
 
 struct RootView: View {
+    @State private var currentRoom: String? = nil  // Whether login or not
+
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        if let room = currentRoom {
+            GuestTabView(room: room, onSignOut: { currentRoom = nil })
+        } else {
+            LoginView { room in
+                currentRoom = room
+            }
+        }
     }
 }
 
 #Preview {
-    RootView()
+    RootView().environmentObject(AppStore())
 }

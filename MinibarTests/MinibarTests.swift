@@ -8,29 +8,34 @@
 import XCTest
 @testable import Minibar
 
+@MainActor
 final class MinibarTests: XCTestCase {
+    var store: AppStore!
 
-    override func setUpWithError() throws {
-        // Put setup code here. This method is called before the invocation of each test method in the class.
+    override func setUp() {
+        super.setUp()
+        store = AppStore()
     }
 
-    override func tearDownWithError() throws {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
+    func testAddAndDeleteOrder() {
+        let p = Product(name: "Test", price: 1)
+        let item = OrderItem(product: p, quantity: 1, room: "0808")
+
+        store.add(item)
+        XCTAssertEqual(store.orders.count, 1)
+
+        store.delete(item.id)
+        XCTAssertEqual(store.orders.count, 0)
     }
 
-    func testExample() throws {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
-        // Any test you write for XCTest can be annotated as throws and async.
-        // Mark your test throws to produce an unexpected failure when your test encounters an uncaught error.
-        // Mark your test async to allow awaiting for asynchronous code to complete. Check the results with assertions afterwards.
-    }
+    func testUpdateOrderChangesQuantity() {
+        let p = Product(name: "Test", price: 1)
+        var item = OrderItem(product: p, quantity: 1, room: "0808")
 
-    func testPerformanceExample() throws {
-        // This is an example of a performance test case.
-        self.measure {
-            // Put the code you want to measure the time of here.
-        }
-    }
+        store.add(item)
+        item.quantity = 3
+        store.update(item)
 
+        XCTAssertEqual(store.orders.first?.quantity, 3)
+    }
 }
